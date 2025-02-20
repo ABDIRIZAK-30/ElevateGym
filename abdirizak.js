@@ -6,3 +6,7 @@ console.log("gg")
 burger.addEventListener("click", ()=> {
     navigationBar.classList.toggle("active");
 })
+
+
+
+
