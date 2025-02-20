@@ -31,9 +31,11 @@ body{
 
 header {
     background-color:rgba(0, 0, 0, 0.6);
-    position: sticky;
+    position: fixed;
+    top: 0px;
     height: 83px;
     width: 100%;
+    z-index:11111;
 }
 .main-nav{
     position: relative;
@@ -130,12 +132,14 @@ header {
     width: 100%;
     height: 100%;
     z-index: -1;
+    
 }
 .top-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
     
 }
 
@@ -144,8 +148,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 .center-content h1{
@@ -186,9 +188,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 25rem;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 .center-title img{
     width: 10%;
@@ -216,7 +217,10 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    top: 50rem;
 }
+
+
 .center-title{
     display: flex;
     justify-content: center;
@@ -227,9 +231,58 @@ header {
     position: relative;
 }
 
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 4.5rem;
+    margin-top: 3rem;
 
+   
+}
+.left-content{
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius: 1rem;
+    padding: 2rem;
+}
 
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.fas{
+    font-size: 4rem;
+    color: #750000;
+}
 
+.info h3{
+    font-size: 2rem;
+    color: #130080;
+}
+.info p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+.info-btn{
+    padding: 1rem 2rem;
+    width: 40%;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    text-wrap: nowrap;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e2f, #0000ff);
+    transition: 1s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.info-btn:hover{
+    background: linear-gradient(135deg, #460000, #00005a);
+}
 
 
 
@@ -286,28 +339,211 @@ header {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 991px) {
+@media (max-width: 2591px) {
     .navigation-bar {
-        display: block !important;
+        display: block;
     }
 }
 
-@media (max-width: 990px){
+
+@media (max-width:990px){
+    
+    .burger{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 23px;
+    } 
+    .burger span{
+        display: block;
+        margin-bottom: 3px;
+        height: 3px;
+        color: #940000;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .navigation-bar{
+        display: none;
+        position: fixed;
+        left:0;
+        right:0;
+        top: 70px;
+        width: 100%;
+        background-color: #130080;
+        justify-content: center;
+        align-items: flex-start;
+        padding-block: 10px;
+        text-align: center;
+        z-index: 1;
+        height: 100vh;
+       
+    }
+    
+    .navigation-bar .links a{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navigation-bar .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navigation-bar .links .nav-btn{
+        margin-right: 60px;
+        padding: 0.5rem 6rem;
+        border: none;
+        border-radius: 0.5rem;
+        text-wrap: nowrap;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 2rem;
+    }
+       
+    
+    .navigation-bar .links .nav-btn:hover{
+        background-color: rgb(0, 18, 218);
+        color: #ffffff;
+    }
+    
+    header{
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+    }
+    .main-nav h1{
+        font-size: 2.5rem;
+    }
+    
+    .center-content span{
+        font-size: 4rem;
+        text-transform: capitalize;
+        color: white;
+    }
+    .content{
+        display: grid;
+        width: 100%;
+        gap: 2.5rem;
+        margin-top: 3rem;
+    
+    }
+    
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 5rem; */
+}
+.center-title img{
+    width: 10%;
+    height: 100%;
+    margin-top: -1rem;
+}
+.center-title h1{
+    font-size: 3rem;
+    /* margin-top: 10rem; */
+}
+.center-title span{
+    font-size: 4rem;
+    color: #130080;
+}
+.center-title p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.center-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50rem;
+}
+
+
+.center-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 4.5rem;
+    margin-top: 3rem;
+
+   
+}
+.left-content{
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border-radius: 1rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.fas{
+    font-size: 4rem;
+    color: #750000;
+}
+
+.info h3{
+    font-size: 2rem;
+    color: #130080;
+}
+.info p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    line-height: 1.5rem;
+}
+.info-btn{
+    padding: 1rem 2rem;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    text-wrap: nowrap;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e2f, #0000ff);
+    transition: 1s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.info-btn:hover{
+    background: linear-gradient(135deg, #460000, #00005a);
+}
+
+}
+
+
+
+
+@media (max-width: 480px){
 
 .burger{
     display: block;
@@ -387,7 +623,15 @@ header{
     text-transform: capitalize;
     color: white;
 }
+.content{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
 
+   
+}
 }
 
 
