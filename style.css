@@ -124,7 +124,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -180,9 +179,53 @@ header {
     color: darkblue;
 }
 
-
-
-
+#service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 25rem;
+    height: 100vh;
+}
+.center-title img{
+    width: 10%;
+    height: 100%;
+    margin-top: -1rem;
+}
+.center-title h1{
+    font-size: 3rem;
+}
+.center-title span{
+    font-size: 4rem;
+    color: #130080;
+}
+.center-title p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.center-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.center-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 
 
 
