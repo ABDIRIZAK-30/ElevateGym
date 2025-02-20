@@ -632,6 +632,11 @@ header{
 
    
 }
+
+.center-title h1{
+    font-size: 3rem;
+    margin-top: 5rem;
+}
 }
 
 
