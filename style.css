@@ -190,6 +190,7 @@ header {
     align-items: center;
     width: 100%;
     height: 100%;
+    /* margin-bottom: 900px; */
 }
 .center-title img{
     width: 10%;
@@ -285,7 +286,11 @@ header {
 }
 
 
-
+.center-banner{
+    background: #000000;
+    height: 70vh;
+    width: 100%;
+}
 
 
 
@@ -443,7 +448,7 @@ header {
     align-items: center;
     width: 100%;
     height: 100%;
-    /* margin-top: 5rem; */
+    /* margin-top: 20rem; */
 }
 .center-title img{
     width: 10%;
