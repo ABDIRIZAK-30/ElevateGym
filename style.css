@@ -420,7 +420,6 @@ header {
     margin-top: 5rem;
 }
 
-
 .content-btn{
     padding: 1rem 2rem;
     color: white;
@@ -439,12 +438,35 @@ header {
 
 }
 
+.style span{
+    color:blue;
+}
 
 
+table{
+    width: 100%;
+    height: 100%;
+}
+th{
+    font-size: 1.5rem;
+    color: #1f00cf;
+    text-align: start;
+}
+tr{
+    gap: 8rem;
+    padding: 50rem;
+}
+td{
+    font-size: 1.3rem;
+}
+.time{
+    color: #2d12ff;
+}
 
 
-
-
+.mobile-table{
+    display: none;
+}
 
 
 
@@ -606,11 +628,8 @@ header {
 }
 .center-section{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     position: relative;
     top: 50rem;
 }
@@ -632,12 +651,15 @@ header {
     grid-template-rows: repeat(3,1fr);
     gap: 4.5rem;
     margin-top: 3rem;
+    justify-content: center;
+
 
    
 }
 .left-content{
     display: flex;
     flex-direction:column;
+    justify-content: center;
     gap: 1rem;
     background: linear-gradient(135deg, #00c6ff, #0072ff);
     border-radius: 1rem;
@@ -653,7 +675,7 @@ header {
 }
 
 .info h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #130080;
 }
 .info p{
@@ -673,22 +695,82 @@ header {
     transition: 1s ease-in-out;
     text-transform: uppercase;
     cursor: pointer;
+    margin-top: 3rem;
 }
 .info-btn:hover{
     background: linear-gradient(135deg, #460000, #00005a);
 }
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns:1fr;
     grid-template-rows: repeat(2,1fr);
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     width: 100%;
     height: 100%;
+    margin-top: -10rem;
 }
-.content2,.content3{
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.style-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-card h1{
+    font-size: 2rem;
+    color: rgb(231, 231, 231);
+
+}
+.style-card p{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.images{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    border-radius: 1rem;
+}
+.content1{
+    margin-top: -9rem;
+}
+.content2,.yoga-2,.bodybuilder-2,.cardio-2{
     display: none;
 }
+.content-btn{
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e2f, #0000ff);
+    transition: 1s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+table{
+width: 100%;
+margin-bottom: 5rem;
+height: 70vh;
+}
+td{
+    font-size: 1.1rem;
+}
+
+
 
 }
 
@@ -883,20 +965,151 @@ header{
 .info-btn:hover{
     background: linear-gradient(135deg, #460000, #00005a);
 }
+
+
+
+.center-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('banner-image.jpg')center/ cover no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.center-banner h1{
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.center-banner span{
+    color: #2f00ea;
+}
+.center-banner p{
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.banner-btn{
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+.banner-btn:hover{
+    background-color: #0c00b3;
+    color: white;
+}
+
+.section-grid{
+    padding-bottom: 4rem;
+}
+.classes-cards img{
+    width: 20%;
+    height: 100%;
+    margin-top: -1rem;
+}
 .grid-container{
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: repeat(2,1fr);
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     justify-content: center;
     align-items: center;
     gap: 1rem;
     width: 100%;
     height: 100%;
+    margin-top: -5rem;
 }
-.content2,.content3{
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.style-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-card h1{
+    font-size: 2rem;
+    color: rgb(231, 231, 231);
+
+}
+.style-card p{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.images{
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.content2,.yoga-2,.bodybuilder-2,.cardio-2{
     display: none;
 }
+.content-btn{
+    padding: 1rem 2rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e2f, #0000ff);
+    transition: 1s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
 }
+
+.table-desktop{
+    display: none;
+    }
+.mobile-table{
+    display: flex;
+    width: 100vw;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.table-mobile{
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    
+}
+table{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000058;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+}
+th{
+    text-align: center;
+    color: white;
+}
+td{
+    text-align: justify
+}
+}
+
 
 
